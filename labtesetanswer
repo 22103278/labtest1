@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+emp=np.array((([1,2,3],[7,8,9],[20000,40000,50000])))
+print(emp)
+maxsal=np.max(emp[2,:])
+print(maxsal)
+minsal=np.min(emp[2,:])
+print(minsal)
+averagesal=np.average(emp[2,:])
+print(averagesal)
+n=np.linspace(-np.pi,np.pi,256,endpoints=true)
+fig,(q1,q2)=np.subplots(1,2,figsize(10,5),dpi=100)
+q1.scatter(minsal,n,color="blue",label="plot for minimal")
+q2.scatter(maxsal,n,color="green",label="plot for maximal")
+plt.tough_plot
+ply.view()
